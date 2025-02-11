@@ -1,0 +1,12 @@
+from smartphone import Smartphone
+
+catalog = [
+    Smartphone("Apple", "iPhone 14+", "+79121235666"),
+    Smartphone("Samsung", "Galaxy S8+", "+79119119119"),
+    Smartphone("Google", "Pixel 7", "+79023456789"),
+    Smartphone("Xiaomi", "Mi 11", "+79034567890"),
+    Smartphone("OnePlus", "OnePlus 9", "+79045678901")
+]
+
+for smartphone in catalog:
+    print(f"{smartphone.phone_brand} - {smartphone.phone_model}. {smartphone.phone_number}")

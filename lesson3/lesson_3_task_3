@@ -1,0 +1,9 @@
+from address import Address
+from mailing import Mailing
+
+to_address = Address("123456", "Кострома", "Текстильщиков", "25", "129")
+from_address = Address("654321", "Санкт-Петербург", "Боровая", "19A", "158")
+
+mailing = Mailing(to_address, from_address, 1337.45, "TRACK1400395")
+
+print(f"Отправление {mailing.track} из {mailing.from_ad.index}, {mailing.from_ad.city}, {mailing.from_ad.street}, {mailing.from_ad.house} - {mailing.from_ad.apartment} в {mailing.to_ad.index}, {mailing.to_ad.city}, {mailing.to_ad.street}, {mailing.to_ad.house} - {mailing.to_ad.apartment} стоимостью {mailing.cost}")
